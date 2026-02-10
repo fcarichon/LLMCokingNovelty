@@ -1,0 +1,80 @@
+{
+    "keys": {
+        "<KW0>": "To be replaced - Noun of novelty variations. Found in keys in dict_['keywords']",
+        "<KW1>": "To be replaced - Adjective of novelty variations. Found in value in dict_['keywords']",
+        "<RECIPE_NAME>": "To be replaced - Recipe Name - To define",
+        "<COUNTRY_VAR>": "To be replaced - Country different from the original one - To define",
+        "<NATIONALITY_VAR>": "To be replaced - Nationality different from the original one - To define",
+        "<COUNTRY_ORIG>": "To be replaced - Country of origin - To define",
+        "<NATIONALITY_ORIG>": "To be replaced - Nationality of origin - To define",
+        "<DEFINITION>": "To be replaced - definition of novel concepts - Found in value in dict_['novelty_definitions']"
+    },
+    "novelty_definitions": {
+        "uniquness": "This concept describes the rare or somewhat singular characteristics of an object or group of objects. It encapsulates the idea of a certain distance from an object's identity or its prototypical vision",
+        "newness": "This concept describes the appearance of properties, terms or knowledge regarding an object that had never been observed or made public before in the application field of the object",
+        "difference": "This concept describes the distance of an object from existing objects. The degree to which a design differs from those that have come before it",
+        "surprise": "This concept describes a violation of someone's expectations. It can be regarded as a novelty in a space of expected designs or as a combination of attributes for an object rather than in a space of existing objects"
+    },
+    "keywords_new": {
+        "novelty": "novel",
+        "uniquness": "unique",
+        "newness": "new",
+        "difference": "different",
+        "surprise": "surprising",
+        "creativity": "creative, desirable and useful",
+        "originality": "original"
+    },
+    "keywords_trad": {
+        "authenticity": "authentic",
+        "tradition":"traditional",
+        "prototype": "prototypical"
+    },
+    "templates": {
+        "reg_templates": {
+            "standard": {
+                "basic": "Create a <KW_T> version of this recipe: <RECIPE_NAME>. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "basic_country": "Create a <KW_T> <NATIONALITY_ORIG> version of this recipe: <RECIPE_NAME>. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "with_knowledge": "You are knowledgeable about <COUNTRY_ORIG>, including its culture, history, and nuances, providing insightful and context-aware responses. Create a <KW_T> version of this recipe: <RECIPE_NAME>. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:"
+            },
+            "novelty": {
+                "basic": "Create a <KW1> version of this recipe: <RECIPE_NAME>. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "basic_country": "Create a <KW1> <NATIONALITY_ORIG> version of this recipe: <RECIPE_NAME>. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "with_knowledge": "You are knowledgeable about <COUNTRY_ORIG>, including its culture, history, and nuances, providing insightful and context-aware responses. Create a <KW1> version of this recipe: <RECIPE_NAME>. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:"
+            },
+            "novelty with definition": {
+                "basic_definition": "Here is a possible definition of novelty : <DEFINITION>. Knowing this definition of novelty as <KW0>, create a <KW1> version of this recipe: <RECIPE_NAME>. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "with_knowledge_definition": "Here is a possible definition of novelty : <DEFINITION>. You are also knowledgeable about <COUNTRY_ORIG>, including its culture, history, and nuances, providing insightful and context-aware responses. Knowing this definition of novelty as <KW0> and your cultural knowledge, create a <KW1> version of this recipe: <RECIPE_NAME>. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "cult_definition": "Here is a possible definition of novelty : <DEFINITION>. Knowing this definition of novelty as <KW0>, create a <KW1> <NATIONALITY_VAR> version of this recipe: <RECIPE_NAME>. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:"
+            },
+            "cultural": {
+                "basic_1": "Create a <KW1> <NATIONALITY_VAR> version of this recipe: <RECIPE_NAME>. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "basic_cult": "Create a <KW1> version of this recipe: <RECIPE_NAME>, which is adapted to the <NATIONALITY_VAR> culture. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "knowldege_var": "You are knowledgeable about <COUNTRY_VAR>, including its culture, history, and nuances, providing insightful and context-aware responses. Create a <KW1> <NATIONALITY_VAR> version of this recipe: <RECIPE_NAME>. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "knowledge_orig": "You are knowledgeable about <COUNTRY_ORIG>, including its culture, history, and nuances, providing insightful and context-aware responses. Create a <KW1> <NATIONALITY_VAR> version of this recipe: <RECIPE_NAME>. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:"
+            }
+        },
+        "KB_templates": {
+            "standard": {
+                "basic": "Assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, create a <KW_T> <NATIONALITY_ORIG> version of this recipe. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "basic_country": "Assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, create a <KW_T> version of this recipe. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "with_knowledge": "You are knowledgeable about <COUNTRY_ORIG>, including its culture, history, and nuances, providing insightful and context-aware responses. Assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, create a <KW_T> version of this recipe. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:"
+            },
+            "novelty": {
+                "basic": "Assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, create a <KW1> version of this recipe. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "basic_country": "Assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, create a <KW1> <NATIONALITY_ORIG> version of this recipe. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "with_knowledge": "You are knowledgeable about <COUNTRY_ORIG>, including its culture, history, and nuances, providing insightful and context-aware responses. Assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, create a <KW1> version of this recipe. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:"
+            },
+            "novelty with definition": {
+                "basic_definition": "Here is a possible definition of novelty : <DEFINITION>. Knowing this definition of novelty as <KW0> and assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, create a <KW1> version of this recipe. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "with_knowledge_definition": "Here is a possible definition of novelty : <DEFINITION>.  You are also knowledgeable about <COUNTRY_ORIG>, including its culture, history, and nuances, providing insightful and context-aware responses. Assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, and knowing this definition of novelty as <KW0> and your cultural knowledge, create a <KW1> version of this recipe. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "cult_definition": "Here is a possible definition of novelty : <DEFINITION>. Knowing this definition of novelty as <KW0> and assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, create a <KW1> <NATIONALITY_VAR> version of this recipe. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:"
+            },
+            "cultural": {
+                "basic_1": "Assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, create a <KW1> <NATIONALITY_VAR> version of this recipe. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "basic_cult": "Assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, create a <KW1> version of this recipe, which is adapted to <NATIONALITY_VAR> culture. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "knowldege_var": "You are knowledgeable about <COUNTRY_VAR>, including its culture, history, and nuances, providing insightful and context-aware responses. Assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, create a <KW1> <NATIONALITY_VAR> version of this recipe. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:",
+                "knowledge_orig": "You are knowledgeable about <COUNTRY_ORIG>, including its culture, history, and nuances, providing insightful and context-aware responses. Assuming that your knowledge of <RECIPE_NAME> is limited to the examples I provided you, create a <KW1> <NATIONALITY_VAR> version of this recipe. \nPlease return, in English only, the following: \n1. A recipe title. \n2. A list of ingredients. \n3. A set of cooking instructions. \nThe instructions must use only the ingredients listed above, be clear and concise, and maintain the structure and order described. \n Title:"
+            }
+        }
+    }
+}

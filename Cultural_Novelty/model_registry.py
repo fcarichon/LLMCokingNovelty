@@ -1,0 +1,16 @@
+MODEL_REGISTRY = {
+    "llama3-big": "meta-llama/Meta-Llama-3-70B-Instruct",
+    "llama3-instruct": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "gemma-2-big": "google/gemma-2-27b-it",
+    "gemma-3": "google/gemma-3-27b-it",
+    "gemma-2-small": "google/gemma-2-9b-it",
+    "orion": "OrionStarAI/Orion-14B-Chat",
+    "olmo": "allenai/OLMoE-1B-7B-0924-Instruct",
+    "deepseek": "deepseek-ai/deepseek-llm-7b-chat",
+    "falcon-mamba": "tiiuae/falcon-mamba-7b-instruct",
+    "falcon-big": "tiiuae/falcon-40b",
+    "apertus": "swiss-ai/Apertus-70B-Instruct-2509",
+    "bloom": "bigscience/bloomz",
+    "microsoft_instruct": "microsoft/Phi-4-multimodal-instruct",
+    "qwen_2": "Qwen/Qwen2.5-32B-Instruct",
+    "qwen_3": "Qwen/Qwen3-30B-A3B-Instruct-2507"}
