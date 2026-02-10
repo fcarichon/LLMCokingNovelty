@@ -4,16 +4,15 @@ Access to GlobalFusion Dataset : https://drive.google.com/file/d/1kYUw1BIym8E55g
 
 ## Detail of each file
 LLMS Recipe Generation:
-	Gen_dataset.py : Generating the templates for all recipes (Smaples by countries or distance)
+	Gen_dataset.py : Generating the templates for all recipes
 	data_utils.py : Include sampling method by distances and class for template gen based on template instructions
-
-	Gen_recipes_LLMs.py : Main   (to merge with Apertus configuration)
+	Gen_recipes_LLMs.py : Main
 	config_genLLMs.py : Configurations for LLM & paths
 	model_utils.py : function to get 
 
 Combining LLMs Generated recipes with Paired GlobalFusion Recipes:
 	GlobalFusion_withLLMS_Generation.py : Main
-	LLM_Novelty_Utils.py : Pocessing LLMs Generated recipes to match GlobalFuion format {Title, Ingredient, Instructions}
+	LLM_Novelty_Utils.py : Pocessing LLMs Generated recipes to match GlobalFuion format (Title, Ingredient, Instructions)
 
 Measure Novelty:
 	measuring_novelty.py : Main
