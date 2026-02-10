@@ -4,7 +4,7 @@ Access to GlobalFusion Dataset : https://drive.google.com/file/d/1kYUw1BIym8E55g
 
 ## Detail of each file
 LLMS Recipe Generation:
-	Gen_dataset.py : Generating the templates for all recipes
+	Gen_dataset.py : Generating the templates for all recipes <\br>
 	data_utils.py : Include sampling method by distances and class for template gen based on template instructions
 	Gen_recipes_LLMs.py : Main
 	config_genLLMs.py : Configurations for LLM & paths
